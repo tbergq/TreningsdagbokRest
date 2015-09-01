@@ -19,11 +19,8 @@ namespace TreningsdagbokRest.Controllers
             _exerciseService = exerciseService;
         }
 
-        public ExercisesController()
-        {
-            _exerciseService = new ExerciseService(new ExerciseRepository());
-        }
-
+      
+        [AllowAnonymous]
         public IHttpActionResult Get()
         {
             var exercises = _exerciseService.GetAll();

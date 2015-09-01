@@ -134,6 +134,7 @@
     <Compile Include="App_Start\AutofacSetup.cs" />
     <Compile Include="App_Start\AutoMapperConfiguration.cs" />
     <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ExercisesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Models\WorkoutModel.cs" />
