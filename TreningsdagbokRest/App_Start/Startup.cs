@@ -2,7 +2,9 @@
 using Autofac.Integration.WebApi;
 using AutoMapper;
 using Microsoft.Owin;
+using Microsoft.Owin.Security.OAuth;
 using Owin;
+using System;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
@@ -38,7 +40,7 @@ namespace TreningsdagbokRest.App_Start
             //app.UseWebApi(config);
             //app.UseAutofacWebApi(config);
 
-            //ConfigureOAuth(app);
+            ConfigureOAuth(app);
             AutoMapperConfiguration.Configure();
             Mapper.AssertConfigurationIsValid();
             var builder = new ContainerBuilder();
@@ -56,6 +58,22 @@ namespace TreningsdagbokRest.App_Start
             app.UseAutofacMiddleware(container);
             app.UseAutofacWebApi(config);
             app.UseWebApi(config);
+        }
+
+        public void ConfigureOAuth(IAppBuilder app)
+        {
+            OAuthAuthorizationServerOptions OAuthServerOptions = new OAuthAuthorizationServerOptions()
+            {
+                AllowInsecureHttp = true,
+                TokenEndpointPath = new PathString("/token"),
+                AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
+                Provider = new SimpleAuthorizationServerProvider()
+            };
+
+            // Token Generation
+            app.UseOAuthAuthorizationServer(OAuthServerOptions);
+            app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
+
         }
     }
 }

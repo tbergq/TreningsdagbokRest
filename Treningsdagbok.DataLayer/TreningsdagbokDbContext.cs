@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -8,10 +9,11 @@ using Treningsdagbok.DataLayer.Entities;
 
 namespace Treningsdagbok.DataLayer
 {
-    public class TreningsdagbokDbContext : DbContext
+    public class TreningsdagbokDbContext : IdentityDbContext<IdentityUser>
     {
 
         public TreningsdagbokDbContext()
+            : base("name=TreningsdagbokDbContext")
         {
         }
 
@@ -19,7 +21,7 @@ namespace Treningsdagbok.DataLayer
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
