@@ -47,5 +47,16 @@ namespace TreningsdagbokRest.Controllers
             var user = _exerciseService.Add(Mapper.Map<DTOExercise>(model));
             return Ok(user);
         }
+
+        [HttpPut]
+        public IHttpActionResult Put(ExerciseViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Unvalid model");
+            }
+            _exerciseService.Edit(Mapper.Map<DTOExercise>(model));
+            return Ok();
+        }
     }
 }
