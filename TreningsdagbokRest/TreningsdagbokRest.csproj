@@ -154,6 +154,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\ExercisesController.cs" />
+    <Compile Include="Controllers\MuscleGroupsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Models\ExerciseViewModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />

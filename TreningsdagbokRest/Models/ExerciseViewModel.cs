@@ -15,6 +15,7 @@ namespace TreningsdagbokRest.Models
         public string Name { get; set; }
 
         [Required]
+        [Range(1, int.MaxValue)]
         public int MuscleGroupId { get; set; }
         
         public DTOMuscleGroup MuscleGroup { get; set; }
