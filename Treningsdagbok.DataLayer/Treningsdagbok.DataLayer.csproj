@@ -61,9 +61,12 @@
     <Compile Include="DAL\ExerciseRepository.cs" />
     <Compile Include="DAL\Interface\IBaseRepository.cs" />
     <Compile Include="DAL\Interface\IExerciseRepository.cs" />
+    <Compile Include="DAL\Interface\IMuscleGroupRepository.cs" />
     <Compile Include="DAL\Interface\IRepository.cs" />
+    <Compile Include="DAL\MuscleGroupRepository.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Exercise.cs" />
+    <Compile Include="Entities\MuscleGroup.cs" />
     <Compile Include="Entities\UserModel.cs" />
     <Compile Include="Migrations\201507211138116_Initial.cs" />
     <Compile Include="Migrations\201507211138116_Initial.Designer.cs">
@@ -72,6 +75,10 @@
     <Compile Include="Migrations\201509011053291_USers.cs" />
     <Compile Include="Migrations\201509011053291_USers.Designer.cs">
       <DependentUpon>201509011053291_USers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509021238109_MuscleGroups.cs" />
+    <Compile Include="Migrations\201509021238109_MuscleGroups.Designer.cs">
+      <DependentUpon>201509021238109_MuscleGroups.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201509011053291_USers.resx">
       <DependentUpon>201509011053291_USers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509021238109_MuscleGroups.resx">
+      <DependentUpon>201509021238109_MuscleGroups.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
