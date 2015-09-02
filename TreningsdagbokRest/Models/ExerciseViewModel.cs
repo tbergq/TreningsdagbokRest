@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using Treningsdagbok.ServiceLayer.DTO;
 
 namespace TreningsdagbokRest.Models
 {
@@ -14,7 +15,9 @@ namespace TreningsdagbokRest.Models
         public string Name { get; set; }
 
         [Required]
-        public int MuscleGroup { get; set; }
+        public int MuscleGroupId { get; set; }
+        
+        public DTOMuscleGroup MuscleGroup { get; set; }
 
         public string YoutubeLink { get; set; }
 

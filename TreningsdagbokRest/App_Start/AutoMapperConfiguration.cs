@@ -15,6 +15,13 @@ namespace TreningsdagbokRest.App_Start
         {
             MapExercise();
             MapUser();
+            MapMuscleGroup();
+        }
+
+        private static void MapMuscleGroup()
+        {
+            Mapper.CreateMap<MuscleGroup, DTOMuscleGroup>();
+            Mapper.CreateMap<DTOMuscleGroup, MuscleGroup>();
         }
 
         private static void MapUser()
