@@ -58,5 +58,12 @@ namespace TreningsdagbokRest.Controllers
             _exerciseService.Edit(Mapper.Map<DTOExercise>(model));
             return Ok();
         }
+
+        [HttpDelete]
+        public IHttpActionResult Delete(int id)
+        {
+            _exerciseService.Delete(id);
+            return Ok();
+        }
     }
 }

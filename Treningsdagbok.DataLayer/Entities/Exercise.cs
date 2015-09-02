@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,10 @@ namespace Treningsdagbok.DataLayer.Entities
         public string Name { get; set; }
 
         [Required]
-        public int MuscleGroup { get; set; }
+        public int MuscleGroupId { get; set; }
+
+        [ForeignKey("MuscleGroupId")]
+        public MuscleGroup MuscleGroup { get; set; }
 
         public string YoutubeLink { get; set; }
 

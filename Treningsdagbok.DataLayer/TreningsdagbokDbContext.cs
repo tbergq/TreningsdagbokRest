@@ -18,6 +18,7 @@ namespace Treningsdagbok.DataLayer
         }
 
         public DbSet<Exercise> Exercise { get; set; }
+        public DbSet<MuscleGroup> MuscleGroup { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
