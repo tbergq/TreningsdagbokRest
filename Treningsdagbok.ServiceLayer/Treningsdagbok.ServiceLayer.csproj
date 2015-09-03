@@ -43,17 +43,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\BaseDTO.cs" />
+    <Compile Include="DTO\DTODayExercise.cs" />
     <Compile Include="DTO\DTOExercise.cs" />
     <Compile Include="DTO\DTOMuscleGroup.cs" />
+    <Compile Include="DTO\DTOProgram.cs" />
     <Compile Include="DTO\DTOUserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\DayExerciseService.cs" />
     <Compile Include="Services\ExerciseService.cs" />
     <Compile Include="Services\Interface\IBaseService.cs" />
+    <Compile Include="Services\Interface\IDayExerciseService.cs" />
     <Compile Include="Services\Interface\IExerciseService.cs" />
     <Compile Include="Services\Interface\IMuscleGroupService.cs" />
+    <Compile Include="Services\Interface\IProgramService.cs" />
     <Compile Include="Services\Interface\IService.cs" />
     <Compile Include="Services\MuscleGroupService.cs" />
+    <Compile Include="Services\ProgramService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Treningsdagbok.DataLayer\Treningsdagbok.DataLayer.csproj">

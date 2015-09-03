@@ -18,6 +18,13 @@ namespace TreningsdagbokRest.App_Start
             MapMuscleGroup();
             MapDayExercise();
             MapProgram();
+            MapWeek();
+        }
+
+        private static void MapWeek()
+        {
+            Mapper.CreateMap<Week, DTOWeek>();
+            Mapper.CreateMap<DTOWeek, Week>();
         }
 
         private static void MapProgram()

@@ -58,16 +58,25 @@
   <ItemGroup>
     <Compile Include="DAL\AuthRepository.cs" />
     <Compile Include="DAL\BaseRepository.cs" />
+    <Compile Include="DAL\DayExerciseRepository.cs" />
     <Compile Include="DAL\ExerciseRepository.cs" />
     <Compile Include="DAL\Interface\IBaseRepository.cs" />
+    <Compile Include="DAL\Interface\IDayExerciseRepository.cs" />
     <Compile Include="DAL\Interface\IExerciseRepository.cs" />
     <Compile Include="DAL\Interface\IMuscleGroupRepository.cs" />
+    <Compile Include="DAL\Interface\IProgramRepository.cs" />
     <Compile Include="DAL\Interface\IRepository.cs" />
+    <Compile Include="DAL\Interface\IWeekRepository.cs" />
     <Compile Include="DAL\MuscleGroupRepository.cs" />
+    <Compile Include="DAL\ProgramRepository.cs" />
+    <Compile Include="DAL\WeekRepository.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\DayExercise.cs" />
     <Compile Include="Entities\Exercise.cs" />
     <Compile Include="Entities\MuscleGroup.cs" />
+    <Compile Include="Entities\Program.cs" />
     <Compile Include="Entities\UserModel.cs" />
+    <Compile Include="Entities\Week.cs" />
     <Compile Include="Migrations\201507211138116_Initial.cs" />
     <Compile Include="Migrations\201507211138116_Initial.Designer.cs">
       <DependentUpon>201507211138116_Initial.cs</DependentUpon>
