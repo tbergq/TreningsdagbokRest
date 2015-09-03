@@ -12,7 +12,9 @@ namespace Treningsdagbok.ServiceLayer.DTO
 
         public string Name { get; set; }
 
-        public int MuscleGroup { get; set; }
+        public int MuscleGroupId { get; set; }
+        
+        public DTOMuscleGroup MuscleGroup { get; set; }
 
         public string YoutubeLink { get; set; }
 

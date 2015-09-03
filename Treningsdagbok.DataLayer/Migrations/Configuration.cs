@@ -6,6 +6,7 @@ namespace Treningsdagbok.DataLayer.Migrations
     using System.Data.Entity.Migrations;
     using System.IO;
     using System.Linq;
+    using Treningsdagbok.DataLayer.Entities;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Treningsdagbok.DataLayer.TreningsdagbokDbContext>
     {
@@ -28,7 +29,24 @@ namespace Treningsdagbok.DataLayer.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-
+            context.MuscleGroup.AddOrUpdate(x => x.Name,
+                new MuscleGroup {Name= "Neck" },
+                new MuscleGroup { Name = "Traps" },
+                new MuscleGroup { Name = "Shoulders" },
+                new MuscleGroup { Name = "Chest" },
+                new MuscleGroup { Name = "Biceps" },
+                new MuscleGroup { Name = "Forearm" },
+                new MuscleGroup { Name = "Abs" },
+                new MuscleGroup { Name = "Quads" },
+                new MuscleGroup { Name = "Calves" },
+                new MuscleGroup { Name = "Lats" },
+                new MuscleGroup { Name = "Triceps" },
+                new MuscleGroup { Name = "Middle Back" },
+                new MuscleGroup { Name = "Lower Back" },
+                new MuscleGroup { Name = "Glutes" },
+                new MuscleGroup { Name = "Hamstrings" },
+                new MuscleGroup { Name = "Core" }
+                );
             
         }
     }
