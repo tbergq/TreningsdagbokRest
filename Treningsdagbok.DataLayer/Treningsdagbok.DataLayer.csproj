@@ -59,9 +59,11 @@
     <Compile Include="DAL\AuthRepository.cs" />
     <Compile Include="DAL\BaseRepository.cs" />
     <Compile Include="DAL\DayExerciseRepository.cs" />
+    <Compile Include="DAL\DayRepository.cs" />
     <Compile Include="DAL\ExerciseRepository.cs" />
     <Compile Include="DAL\Interface\IBaseRepository.cs" />
     <Compile Include="DAL\Interface\IDayExerciseRepository.cs" />
+    <Compile Include="DAL\Interface\IDayRepository.cs" />
     <Compile Include="DAL\Interface\IExerciseRepository.cs" />
     <Compile Include="DAL\Interface\IMuscleGroupRepository.cs" />
     <Compile Include="DAL\Interface\IProgramRepository.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="DAL\ProgramRepository.cs" />
     <Compile Include="DAL\WeekRepository.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Day.cs" />
     <Compile Include="Entities\DayExercise.cs" />
     <Compile Include="Entities\Exercise.cs" />
     <Compile Include="Entities\MuscleGroup.cs" />

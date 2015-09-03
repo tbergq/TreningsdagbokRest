@@ -25,5 +25,9 @@ namespace Treningsdagbok.ServiceLayer.DTO
         public int Pause { get; set; }
 
         public string Description { get; set; }
+
+        public int DayId { get; set; }
+
+        public DTODay Day { get; set; }
     }
 }

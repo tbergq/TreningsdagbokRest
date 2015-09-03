@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Treningsdagbok.ServiceLayer.DTO
 {
-    public class DTODay
+    public class DTODay : BaseDTO
     {
         public int Id { get; set; }
 

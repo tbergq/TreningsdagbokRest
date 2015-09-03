@@ -31,5 +31,11 @@ namespace Treningsdagbok.DataLayer.Entities
         public int Pause { get; set; }
 
         public string Description { get; set; }
+
+        [Required]
+        public int DayId { get; set; }
+
+        [ForeignKey("DayId")]
+        public Day Day { get; set; }
     }
 }
