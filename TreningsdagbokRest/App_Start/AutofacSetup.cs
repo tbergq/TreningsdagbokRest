@@ -24,6 +24,10 @@ namespace TreningsdagbokRest.App_Start
             builder.RegisterType<ExerciseService>().As<IExerciseService>();
             builder.RegisterType<MuscleGroupRepository>().As<IMuscleGroupRepository>();
             builder.RegisterType<MuscleGroupService>().As<IMuscleGroupService>();
+            builder.RegisterType<ProgramRepository>().As<IProgramRepository>();
+            builder.RegisterType<ProgramService>().As<IProgramService>();
+            builder.RegisterType<DayExerciseRepository>().As<IDayExerciseRepository>();
+            builder.RegisterType<DayExerciseService>().As<IDayExerciseService>();
         }
     }
 }
