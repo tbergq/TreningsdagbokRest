@@ -19,6 +19,13 @@ namespace TreningsdagbokRest.App_Start
             MapDayExercise();
             MapProgram();
             MapWeek();
+            MapDay();
+        }
+
+        private static void MapDay()
+        {
+            Mapper.CreateMap<Day, DTODay>();
+            Mapper.CreateMap<DTODay, Day>();
         }
 
         private static void MapWeek()

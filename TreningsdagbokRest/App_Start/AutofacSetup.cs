@@ -30,6 +30,8 @@ namespace TreningsdagbokRest.App_Start
             builder.RegisterType<DayExerciseService>().As<IDayExerciseService>();
             builder.RegisterType<WeekRepository>().As<IWeekRepository>();
             builder.RegisterType<WeekService>().As<IWeekService>();
+            builder.RegisterType<DayRepository>().As<IDayRepository>();
+            builder.RegisterType<DayService>().As<IDayService>();
         }
     }
 }

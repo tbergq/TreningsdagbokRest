@@ -22,6 +22,7 @@ namespace Treningsdagbok.DataLayer
         public DbSet<DayExercise> DayExercise { get; set; }
         public DbSet<Program> Program { get; set; }
         public DbSet<Week> Week { get; set; }
+        public DbSet<Day> Day { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
