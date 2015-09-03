@@ -40,6 +40,7 @@ namespace TreningsdagbokRest.Controllers
         [HttpPost]
         public IHttpActionResult Post(ExerciseViewModel model)
         {
+            
             if (!ModelState.IsValid)
             {
                 return BadRequest("Unvalid model");

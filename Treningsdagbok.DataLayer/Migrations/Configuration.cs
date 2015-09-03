@@ -44,7 +44,8 @@ namespace Treningsdagbok.DataLayer.Migrations
                 new MuscleGroup { Name = "Middle Back" },
                 new MuscleGroup { Name = "Lower Back" },
                 new MuscleGroup { Name = "Glutes" },
-                new MuscleGroup { Name = "Hamstrings" }
+                new MuscleGroup { Name = "Hamstrings" },
+                new MuscleGroup { Name = "Core" }
                 );
             
         }
