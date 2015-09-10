@@ -38,6 +38,9 @@ namespace TreningsdagbokRest.App_Start
         {
             Mapper.CreateMap<Program, DTOProgram>();
             Mapper.CreateMap<DTOProgram, Program>();
+
+            Mapper.CreateMap<ProgramViewModel, DTOProgram>();
+            Mapper.CreateMap<DTOProgram, ProgramViewModel>();
         }
 
         private static void MapDayExercise()

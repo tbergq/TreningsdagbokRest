@@ -9,5 +9,6 @@ namespace Treningsdagbok.DataLayer.DAL.Interface
 {
     public interface IProgramRepository : IBaseRepository<Program>
     {
+        IEnumerable<Program> GetAllProgramsFromUser(string userId);
     }
 }

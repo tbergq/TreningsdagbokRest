@@ -14,5 +14,13 @@ namespace Treningsdagbok.DataLayer.DAL
         {
             return context.Program;
         }
+
+        public IEnumerable<Program> GetAllProgramsFromUser(string userId)
+        {
+            using (var dbContext = new TreningsdagbokDbContext())
+            {
+                return dbContext.Program.Where(x => x.UserID == userId).ToList();
+            }
+        }
     }
 }

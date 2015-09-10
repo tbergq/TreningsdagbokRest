@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,11 @@ namespace Treningsdagbok.ServiceLayer.Services
             : base(programRepository)
         {
             _programRepository = programRepository;
+        }
+
+        public IEnumerable<DTOProgram> GetAllProgramsFromUser(string userId)
+        {
+            return Mapper.Map<IEnumerable<DTOProgram>>(_programRepository.GetAllProgramsFromUser(userId));
         }
     }
 }
