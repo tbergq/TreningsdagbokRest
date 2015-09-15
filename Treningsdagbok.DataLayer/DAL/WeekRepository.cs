@@ -15,5 +15,13 @@ namespace Treningsdagbok.DataLayer.DAL
         {
             return context.Week;
         }
+
+        public IEnumerable<Week> GetAllWeeksOfProgram(int programId)
+        {
+            using (var dbContext = new TreningsdagbokDbContext())
+            {
+                return dbContext.Week.Where(x => x.ProgramId == programId).ToList();
+            }
+        }
     }
 }

@@ -9,5 +9,6 @@ namespace Treningsdagbok.DataLayer.DAL.Interface
 {
     public interface IWeekRepository : IBaseRepository<Week>
     {
+        IEnumerable<Week> GetAllWeeksOfProgram(int programId);
     }
 }

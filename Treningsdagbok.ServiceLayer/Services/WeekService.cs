@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,11 @@ namespace Treningsdagbok.ServiceLayer.Services
             : base(weekRepository)
         {
             _weekRepository = weekRepository;
+        }
+
+        public IEnumerable<DTOWeek> GetAllWeeksOfProgram(int programId)
+        {
+            return Mapper.Map <IEnumerable<DTOWeek>>(_weekRepository.GetAllWeeksOfProgram(programId));
         }
     }
 }

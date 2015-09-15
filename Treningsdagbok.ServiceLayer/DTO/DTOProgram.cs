@@ -15,5 +15,7 @@ namespace Treningsdagbok.ServiceLayer.DTO
         public DateTime CreationDate { get; set; }
 
         public string UserID { get; set; }
+
+        public List<DTOWeek> Weeks { get; set; }
     }
 }
