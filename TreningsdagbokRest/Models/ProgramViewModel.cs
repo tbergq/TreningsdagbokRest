@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Treningsdagbok.ServiceLayer.DTO
+namespace TreningsdagbokRest.Models
 {
-    public class DTOProgram : BaseDTO
+    public class ProgramViewModel
     {
         public int Id { get; set; }
 
+        [Required]
         public string Name { get; set; }
 
         public DateTime CreationDate { get; set; }
 
         public string UserID { get; set; }
-
-        public List<DTOWeek> Weeks { get; set; }
     }
 }

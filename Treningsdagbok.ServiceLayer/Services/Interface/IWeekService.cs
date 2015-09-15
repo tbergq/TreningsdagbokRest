@@ -10,5 +10,6 @@ namespace Treningsdagbok.ServiceLayer.Services.Interface
 {
     public interface IWeekService : IBaseService<Week, DTOWeek>
     {
+        IEnumerable<DTOWeek> GetAllWeeksOfProgram(int programId);
     }
 }

@@ -32,12 +32,20 @@ namespace TreningsdagbokRest.App_Start
         {
             Mapper.CreateMap<Week, DTOWeek>();
             Mapper.CreateMap<DTOWeek, Week>();
+
+            Mapper.CreateMap<DTOWeek, WeekViewModel>();
+            Mapper.CreateMap<WeekViewModel, DTOWeek>();
         }
 
         private static void MapProgram()
         {
-            Mapper.CreateMap<Program, DTOProgram>();
+            Mapper.CreateMap<Program, DTOProgram>()
+                .ForMember(x => x.Weeks, y => y.Ignore());
             Mapper.CreateMap<DTOProgram, Program>();
+
+            Mapper.CreateMap<ProgramViewModel, DTOProgram>()
+                .ForMember(x => x.Weeks, y => y.Ignore());
+            Mapper.CreateMap<DTOProgram, ProgramViewModel>();
         }
 
         private static void MapDayExercise()

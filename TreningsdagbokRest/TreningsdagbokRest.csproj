@@ -155,9 +155,13 @@
     <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\ExercisesController.cs" />
     <Compile Include="Controllers\MuscleGroupsController.cs" />
+    <Compile Include="Controllers\ProgramsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\WeeksController.cs" />
     <Compile Include="Models\ExerciseViewModel.cs" />
+    <Compile Include="Models\ProgramViewModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
+    <Compile Include="Models\WeekViewModel.cs" />
     <Compile Include="Models\WorkoutModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

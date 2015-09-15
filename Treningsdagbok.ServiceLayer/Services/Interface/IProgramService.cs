@@ -10,5 +10,6 @@ namespace Treningsdagbok.ServiceLayer.Services.Interface
 {
     public interface IProgramService : IBaseService<Program, DTOProgram>
     {
+        IEnumerable<DTOProgram> GetAllProgramsFromUser(string userId);
     }
 }
