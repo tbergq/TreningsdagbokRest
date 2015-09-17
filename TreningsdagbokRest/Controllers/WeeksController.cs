@@ -30,5 +30,12 @@ namespace TreningsdagbokRest.Controllers
             var week = _weekService.Add(Mapper.Map<DTOWeek>(model));
             return Ok(week);
         }
+
+        [HttpDelete]
+        public IHttpActionResult Delete(int id)
+        {
+            _weekService.Delete(id);
+            return Ok();
+        }
     }
 }
