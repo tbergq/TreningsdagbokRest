@@ -32,5 +32,12 @@ namespace TreningsdagbokRest.Controllers
             var addedDay = _dayService.Add(day);
             return Created("", addedDay);
         }
+
+        [HttpGet]
+        public IHttpActionResult Get(int id)
+        {
+            var day = _dayService.GetById(id);
+            return Ok(day);
+        }
     }
 }

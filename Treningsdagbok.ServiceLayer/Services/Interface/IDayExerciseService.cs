@@ -10,5 +10,6 @@ namespace Treningsdagbok.ServiceLayer.Services.Interface
 {
     public interface IDayExerciseService : IBaseService<DayExercise, DTODayExercise>
     {
+        IEnumerable<DTODayExercise> GetAllByDayId(int dayId);
     }
 }
