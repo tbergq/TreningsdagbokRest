@@ -20,6 +20,7 @@ namespace TreningsdagbokRest.App_Start
             builder.RegisterType<MuscleGroupsController>();
             builder.RegisterType<ProgramsController>();
             builder.RegisterType<WeeksController>();
+            builder.RegisterType<DaysController>();
 
             //Servies and repositories
             builder.RegisterType<ExerciseRepository>().As<IExerciseRepository>();

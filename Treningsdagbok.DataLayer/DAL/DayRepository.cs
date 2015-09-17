@@ -14,5 +14,13 @@ namespace Treningsdagbok.DataLayer.DAL
         {
             return context.Day;
         }
+
+        public IEnumerable<Day> GetDaysOfWeek(int weekId)
+        {
+            using (var dbContext = new TreningsdagbokDbContext())
+            {
+                return dbContext.Day.Where(x => x.WeekId == weekId).ToList();
+            }
+        }
     }
 }

@@ -10,5 +10,6 @@ namespace Treningsdagbok.ServiceLayer.Services.Interface
 {
     public interface IDayService : IBaseService<Day, DTODay>
     {
+        IEnumerable<DTODay> GetDaysOfWeek(int weekId);
     }
 }

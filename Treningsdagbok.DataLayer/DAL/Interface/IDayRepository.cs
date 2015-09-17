@@ -9,5 +9,6 @@ namespace Treningsdagbok.DataLayer.DAL.Interface
 {
     public interface IDayRepository : IBaseRepository<Day>
     {
+        IEnumerable<Day> GetDaysOfWeek(int weekId);
     }
 }
