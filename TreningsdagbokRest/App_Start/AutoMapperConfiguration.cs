@@ -24,7 +24,8 @@ namespace TreningsdagbokRest.App_Start
 
         private static void MapDay()
         {
-            Mapper.CreateMap<Day, DTODay>();
+            Mapper.CreateMap<Day, DTODay>()
+                .ForMember(x => x.DayExercise, y => y.Ignore());
             Mapper.CreateMap<DTODay, Day>();
         }
 

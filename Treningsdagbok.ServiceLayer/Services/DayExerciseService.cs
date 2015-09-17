@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,11 @@ namespace Treningsdagbok.ServiceLayer.Services
             : base(dayExerciseRepsitory)
         {
             _dayExerciseRepsitory = dayExerciseRepsitory;
+        }
+
+        public IEnumerable<DTODayExercise> GetAllByDayId(int dayId)
+        {
+            return Mapper.Map<IEnumerable<DTODayExercise>>(_dayExerciseRepsitory.GetAllByDayId(dayId));
         }
     }
 }

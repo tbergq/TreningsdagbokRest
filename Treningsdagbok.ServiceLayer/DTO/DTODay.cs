@@ -15,5 +15,7 @@ namespace Treningsdagbok.ServiceLayer.DTO
         public int WeekId { get; set; }
 
         public DTOWeek Week { get; set; }
+
+        public IEnumerable<DTODayExercise> DayExercise { get; set; }
     }
 }

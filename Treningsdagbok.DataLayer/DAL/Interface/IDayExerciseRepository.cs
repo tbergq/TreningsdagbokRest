@@ -9,5 +9,6 @@ namespace Treningsdagbok.DataLayer.DAL.Interface
 {
     public interface IDayExerciseRepository : IBaseRepository<DayExercise>
     {
+        IEnumerable<DayExercise> GetAllByDayId(int dayId);
     }
 }

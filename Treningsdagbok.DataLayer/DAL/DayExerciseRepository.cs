@@ -15,5 +15,13 @@ namespace Treningsdagbok.DataLayer.DAL
         {
             return context.DayExercise;
         }
+
+        public IEnumerable<DayExercise> GetAllByDayId(int dayId)
+        {
+            using(var dbContext = new TreningsdagbokDbContext()) 
+            {
+                return dbContext.DayExercise.Where(x => x.DayId == dayId).ToList();
+            }
+        }
     }
 }
