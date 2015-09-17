@@ -18,7 +18,7 @@ namespace TreningsdagbokRest.Controllers
         }
 
         [HttpGet]
-        [Route("/days/week/{weekId}")]
+        [Route("days/week/{weekId}")]
         public IHttpActionResult GetDaysOfWeek(int weekId)
         {
             var days = _dayService.GetDaysOfWeek(weekId);
